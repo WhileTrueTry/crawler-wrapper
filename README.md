@@ -31,6 +31,7 @@ https://docs.crawl4ai.com/
 
 ```bash
 pip install crawl4ai beautifulsoup4
+crawl4ai-setup
 ```
 
 ### Instalación desde el repositorio
