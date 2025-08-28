@@ -3,8 +3,9 @@
 Un web scraper potente y flexible construido con crawl4ai que permite extraer contenido de páginas web de forma síncrona y asíncrona, con capacidades de scraping simple y recursivo.
 Todo esto es posible gracias a los desarrolladores que crearon y mantienen crawl4ai. 
 Si necesitás algo más complejo, probablemente su framework sea útil
+
 No dejes de visitarlos :)
-https://docs.crawl4ai.com/
+- https://docs.crawl4ai.com/
 
 
 ## 🚀 Características
