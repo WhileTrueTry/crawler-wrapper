@@ -1,9 +1,5 @@
 # Web Scraper con crawl4ai
 
-[![Python](https://img.shields.io/badge/python-3.7+-blue.svg)](https://www.python.org/downloads/)
-[![License](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
-[![Version](https://img.shields.io/badge/version-1.2-orange.svg)](https://github.com/whiletruetry/crawler-scraper)
-
 Un web scraper potente y flexible construido con crawl4ai que permite extraer contenido de páginas web de forma síncrona y asíncrona, con capacidades de scraping simple y recursivo.
 Todo esto es posible gracias a los desarrolladores que crearon y mantienen crawl4ai. 
 Si necesitás algo más complejo, probablemente su framework sea útil
