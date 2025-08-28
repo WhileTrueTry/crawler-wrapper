@@ -132,7 +132,6 @@ async def scrap_landpage(url: str, save_path: Optional[str] = None, return_conte
     print(f"[*] Tipo de resultado: {result_type}")
     
     # Configurar directorio de guardado si se especifica
-    full_path = None
     if save_path:
         if not os.path.exists(save_path):
             os.makedirs(save_path)
@@ -152,9 +151,9 @@ async def scrap_landpage(url: str, save_path: Optional[str] = None, return_conte
                 print(f"[*] Página principal extraída exitosamente. Longitud del contenido: {len(content)} caracteres")
                 
                 # Guardar en archivo si se especifica la ruta
-                if save_path and full_path:
-                    save_content(content, url, full_path, 1, result_type)
-                
+                if save_path:
+                    save_content(content, url, save_path, 1, result_type)
+
             else:
                 error_msg = result.error_message if hasattr(result, 'error_message') else "Error desconocido"
                 print(f"[!] Error al extraer página principal: {error_msg}")
@@ -299,7 +298,6 @@ async def scrap_general(url: str, max_pages: int = 100, max_depth: int = 3,
     print(f"[*] Tipo de resultado: {result_type}")
     
     # Configurar directorio de guardado si se especifica
-    full_path = None
     if save_path:
         if not os.path.exists(save_path):
             os.makedirs(save_path)
@@ -337,9 +335,9 @@ async def scrap_general(url: str, max_pages: int = 100, max_depth: int = 3,
                         crawled_count += 1
                         
                         # Guardar en archivo si se especifica la ruta
-                        if save_path and full_path:
-                            save_content(content, current_url, full_path, crawled_count, result_type)
-                        
+                        if save_path:
+                            save_content(content, current_url, save_path, crawled_count, result_type)
+                            
                         print(f"[*] Página extraída exitosamente {crawled_count}: {current_url}")
                         
                         # Extraer enlaces para el siguiente nivel de profundidad (si no está en profundidad máxima)
